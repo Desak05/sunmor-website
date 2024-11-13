@@ -1,0 +1,111 @@
+:root{
+    --blue:#3498db;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --black:#333;
+    --grey:#b0a9a9;
+    --maroon:#4d0a0c;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+    --border:1px solid var(--grey);
+ }
+ 
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+ }
+
+ .box-container {
+    margin-bottom: 30px;
+ }
+
+.heading{ 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:var(--maroon);
+ }
+
+ .subheading{ 
+    text-align: center;
+    margin-bottom: 40px;
+
+ }
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+ }
+ 
+.products .box-container .box{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    position: relative;
+    padding:20px;
+    background-color: var(--white);
+    width: 290px;
+ }
+ 
+.products .box-container .box img{ 
+    height: 220px;
+ }
+ 
+.products .box-container .box .name{
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--maroon);
+    padding:5px 0;
+ }
+ 
+.products .box-container .box .price{
+    top:10px; left:10px;
+    margin-top: 5px;
+    padding:5px 10px;
+    border-radius: 5px;
+    color:var(--black);
+    font-size: 18px;
+    display: inline-block;
+ }
+ 
+ .products .box-container .box input[type="number"]{
+    margin:5px 0;
+    width: 75%;
+    border:var(--border);
+    border-radius: 5px;
+    font-size: 15px;
+    color:var(--black);
+    padding:5px 10px
+ }
+
+ .btn,
+.delete-btn,
+.option-btn{
+   display: inline-block;
+   padding:10px 30px;
+   cursor: pointer;
+   font-size: 18px;
+   color:var(--white);
+   border-radius: 5px;
+   text-transform: capitalize;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: var(--black);
+}
+
+.btn{
+   background-color: var(--blue);
+   margin-top: 10px;
+}
